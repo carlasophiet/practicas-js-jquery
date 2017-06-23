@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>días de la semana</title>
+ 
+</head>
+<body>
+<h1>Levantarse todos los días</h1>
+
+<script type="text/javascript">
+
+	function todos(){
+		var dias = ['lunes','martes','miércoles','jueves','viernes','sábado','domingo'];
+		var ultimoElemento = dias[dias.length - 1];
+		document.write ('Los días de la semana son ');
+		for (i =0; i < dias.length-1; i++){
+	
+		document.write(dias[i]+', ');
+	  }
+	  	document.write(ultimoElemento + '. </br>');
+
+	  }
+    
+	function diasHabiles(){
+		var dias= ['lunes','martes','miércoles','jueves','viernes'];
+		var ultimoElemento = dias[dias.length - 1];
+		document.write ('Los días hábiles son ');
+		for (i =0; i < dias.length-1; i++){
+	
+		document.write(dias[i]+', ');
+	  }
+	  	document.write(ultimoElemento + '. </br>');
+	}  
+
+	function finDe(){
+		var dias = ['sábado','domingo'];
+		var ultimoElemento = dias[dias.length - 1];
+		document.write ('Los días del fin de semana son ');
+		for (i =0; i < dias.length-1; i++){
+	
+		document.write(dias[i]+' y ');
+	  }
+	  	document.write(ultimoElemento + '. </br>');
+
+	}
+todos()
+diasHabiles()
+finDe()
+		
+
+
+</script>
+
+</body>
+</html>

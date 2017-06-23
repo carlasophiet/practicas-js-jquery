@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang= "es">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>formulario 22/05</title>
+    <link href= "formStefi.css" rel="stylesheet">
+</head>
+<body>
+	<script type="text/javascript">
+		var nombre;
+		var edad;
+		var pais;
+
+		nombre=prompt('Ingrese su nombre');
+			while(!isNaN(nombre)){
+			nombre=prompt('Escriba un nombre válido');
+		}
+		edad=prompt('Ingrese su edad');
+			while(edad<=0 || edad>120 || isNaN(edad)){
+			edad=prompt('Escriba una edad válida');
+			}
+		pais=prompt('Ingrese su país');
+			while(!isNaN(pais)){
+			pais=prompt('Escriba un país válido');
+		}
+	</script>
+	<div>
+		<p>Nombre:
+			<script>document.write(nombre);</script>
+		</p>
+		<p>Edad:
+			<script>document.write(edad);</script>
+		</p>
+		<p>País:
+			<script>document.write(pais);</script>
+		</p>
+	</div>
+</body>
+</html>

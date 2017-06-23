@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calculadora</title>
+</head>
+</head>
+<body>
+
+	<div align="center">
+		<input placeholder="Escriba un número" id="primerNumero" required="true">
+		<input placeholder="Escriba operacion" id="operador"  required="true">
+		<input placeholder="Escriba otro número" id="segundoNumero"  required="true">
+		
+		<button onclick="calculadoraCuatro(document.getElementById('primerNumero').value,document.getElementById('operador').value,document.getElementById('segundoNumero').value)" id="btn-igualUno" type = "button">=</button> <!--CUANDO APRETO BOTON AGARRO -VALORES- DE ARRIBA PARA HACER FUNCION-->
+		<input type= "text" name= "resultado" id="resultado" readonly> <!--input vacio que no se puede escribir-->
+		<script type="text/javascript" src="calculadora.js"></script>
+	</div>
+	</br>
+	<div align="center">
+		<input placeholder="Escriba un número" id="tercerNumero" required="true">
+		<input placeholder="Escriba otro número" id="cuartoNumero"  required="true">
+		<button onclick="suma(document.getElementById('tercerNumero').value,document.getElementById('cuartoNumero').value)" id="btn-suma" type = "button">+</button>
+		<button onclick="resta(document.getElementById('tercerNumero').value,document.getElementById('cuartoNumero').value)" id="btn-resta" type = "button">-</button>
+		<button onclick="multiplicar(document.getElementById('tercerNumero').value,document.getElementById('cuartoNumero').value)" id="btn-multiplicacion" type = "button">*</button>
+		<button onclick="dividir(document.getElementById('tercerNumero').value,document.getElementById('cuartoNumero').value)" id="btn-division" type = "button">/</button>
+		<p>Aprete el botón de la operación a realizar</p>
+		<input type= "text" name= "resultado" id="resultadoDos" readonly> <!--input vacio que no se puede escribir-->
+		<script type="text/javascript" src="calculadora.js"></script>
+	</div></br>
+	<div align="center">
+		<input placeholder="Escriba un número" id="quintoNumero" required="true">
+		<button onclick="factorial(document.getElementById('quintoNumero').value)" id="btn-suma" type = "button">factorial</button>
+		<input type= "text" name= "resultado" id="resultadoTres" readonly> <!--input vacio que no se puede escribir-->
+		<script type="text/javascript" src="calculadora.js"></script>
+	</div>
+	
+	
+</body>
+</html>

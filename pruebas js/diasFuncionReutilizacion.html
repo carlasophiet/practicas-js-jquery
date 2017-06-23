@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>días de la semana</title>
+</head>
+<body>
+<h1>Levantarse todos los días</h1>
+
+<script type="text/javascript">
+	var dias = ['lunes','martes','miércoles','jueves','viernes','sábado','domingo'];
+	var diasHabiles= ['lunes','martes','miércoles','jueves','viernes'];
+	var finDe = ['sábado','domingo'];
+	var diasString = 'Los días de la semana son ';
+	var diasHabilesString= 'Los días hábiles son ';
+	var finDeString = 'Los días del fin de semana son ';
+
+	
+	 function todos(pArray, pString){		
+		var ultimoElemento = pArray[pArray.length - 1];
+		document.write (pString);
+		
+		
+		for (i =0; i < pArray.length-1; i++){	
+		document.write(pArray[i]+', ');
+	 	}
+	  	document.write(ultimoElemento + '. </br>');
+		
+	}
+    
+	
+todos(dias,diasString);
+todos(diasHabiles, diasHabilesString);
+todos(finDe,finDeString);
+		
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>espantaletras</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var palabras = ['n','a','r','a','n','j','a'];
+		var control = [];
+		var igual = false; //bandera booleana
+	    var p=0;
+		for (i= 0; i< palabras.length; i++){ //accedo a array palabras
+			for(j=0; j < control.length; j++){ //
+				if(control[j]==palabras[i]){    
+					igual == true;									
+				}	
+			}				
+			if (igual == false){		
+				control[p]=palabras[i]; 
+				p++;						
+
+			}
+
+
+		} 
+		document.write(control);
+
+	</script>
+</body>
+</html>

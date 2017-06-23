@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>espantaletras</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var control = [];
+		var encontrado = false;
+		var elemento = "a";
+		var i = 0;
+		/*for (i =0; i < control.length; i++){
+			if (control [i] == elemento){
+				encontrado =true;
+			}
+		}
+
+			while (i < control.length && encontrado == false){
+				if (control[i] == elemento){
+					encontrado = true;
+				}
+				i++;
+				}
+
+			}*/
+
+		//puedo poner un IF (i <control.lenght) que contenga el do while para que no joda	
+		do{
+			if (control[i]== elemento){ //puede romper i, por si el valor no esta seteado correctamente.
+				encontrado == true;
+			}
+			i++
+		}while (i < control.lenght && !encontrado);	
+
+
+	</script>
+
+</body>
+</html>
